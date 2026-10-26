@@ -2,7 +2,7 @@
 
 This README is short on purpose. Use AI to research/understand anything not explained
 here: GenWise, Navin Kabra's background, Cloudflare Workers AI, Clef, and so on. That is
-part of the task.
+part of the task. The task looks like a programming-heavy task, but it doesn't require you to be a programmer: you can use AI to get the program written (and checked into GitHub). I know enough non-programmers who are able to do that now.
 
 ## Background
 
@@ -53,33 +53,29 @@ The task below is a small version of "Checking the AI".
 `comments.json` has 100 forum comments from a made-up college course. Each one is
 **acceptable**, **toxic** or **spam**.
 
-1. Get a free Cloudflare account and an API token for Workers AI. Put your account ID
-   and token in a copy of `cloud-flare.sh` named `cloud-flare.local.sh`, which
-   `.gitignore` keeps out of git. **Never commit your real token.**
-2. Write a Python program that uses Cloudflare's **Clef** model to classify each
-   comment as acceptable, toxic or spam. [CLEF_API.md](CLEF_API.md) explains the API
-   and has sample code.
-3. Have the program write an HTML page that shows each comment with its
+1. Click the green **Use this template** button at the top of this repository's GitHub page to make your own public copy.
+2. Use AI to clone your copy (not this repository) on your computer.
+3. Get a free Cloudflare account and an API token for Workers AI. Put your account ID and token in a copy of `cloud-flare.sh` named `cloud-flare.local.sh`.
+4. Write a Python program that uses Cloudflare's **Clef** model to classify each comment as acceptable, toxic or spam. [CLEF_API.md](CLEF_API.md) explains the API and has sample code.
+5. Have the program write an HTML page that shows each comment with its
    classification, and is easy to scan.
-4. Read every comment and its classification yourself. Wherever Clef got it wrong, add
-   the comment to `MISTAKES.md` with:
+6. Create an empty file called `MISTAKES.md`. Then, read every comment and its classification yourself to check Clef's work. Wherever Clef made a mistake, add the comment to `MISTAKES.md` with:
    - the comment id;
    - Clef's label, and the label you think is right;
    - one or two sentences on why.
 
    If a comment is borderline, say so and explain your choice.
 
-Use AI tools as much as you like for the code. Step 4 is about your own judgement: do
-not ask an AI to do it for you.
+Use AI tools as much as you like for steps 1 to 5. Step 6 is about your own judgement, and is the most important part of the task: do not ask an AI to do it for you.
 
 ## How to submit
 
-1. Click **Use this template** at the top of this repository's GitHub page to make your
-   own public copy.
-2. Add your program, the generated HTML, and `MISTAKES.md`. Say in a few lines at the
-   end of this README how to run your program.
-3. Before you push, check that your API token is not in any commit.
-4. Email the repository link to navin@genwise.in.
+1. At this point, you will have your own copy of the repository.
+2. To the repository, add your program, the generated HTML, and the `MISTAKES.md` file.
+3. Create a new file called `NOTES.md`. In this, add a few lines indicating how to run your program. Then add a short description of what tools/models you used to complete this task, and overall what you felt about doing this.
+4. Before you push, make sure that your API token is not in any commit. This repository has been configured to not check in the `cloud-flare.local.sh` file, which contains your API token.
+5. Commit and push your changes to GitHub. Then check on GitHub that `cloud-flare.local.sh` did not get pushed.
+6. Email the repository link to navin@genwise.in.
 
 ## Notes
 
