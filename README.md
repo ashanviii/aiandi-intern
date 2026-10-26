@@ -15,6 +15,8 @@ Claude and Gemini, and a quiz. Students submit exercise answers each week, ask q
 in forums, and can join a live online session once a month. A student must finish one
 week before the next opens. Students who complete the course get a certificate.
 
+The course assumes that the students only have access to free tiers of the various AI platforms/models; so it will not be a very advanced AI course. It will mostly be about relatively advanced use cases that fit within the free tiers.
+
 ## The TA role
 
 The work involves answering student questions, and working with Navin to build AI-based
@@ -54,7 +56,7 @@ The task below is a small version of "Checking the AI".
 **acceptable**, **toxic** or **spam**.
 
 1. Click the green **Use this template** button at the top of this repository's GitHub page to make your own public copy.
-2. Use AI to clone your copy (not this repository) on your computer.
+2. Use AI to clone your copy (created after you click on "Use this template") on your computer.
 3. Get a free Cloudflare account and an API token for Workers AI. Put your account ID and token in a copy of `cloud-flare.sh` named `cloud-flare.local.sh`.
 4. Write a Python program that uses Cloudflare's **Clef** model to classify each comment as acceptable, toxic or spam. [CLEF_API.md](CLEF_API.md) explains the API and has sample code.
 5. Have the program write an HTML page that shows each comment with its
@@ -73,7 +75,7 @@ Use AI tools as much as you like for steps 1 to 5. Step 6 is about your own judg
 1. At this point, you will have your own copy of the repository.
 2. To the repository, add your program, the generated HTML, and the `MISTAKES.md` file.
 3. Create a new file called `NOTES.md`. In this, add a few lines indicating how to run your program. Then add a short description of what tools/models you used to complete this task, and overall what you felt about doing this.
-4. Before you push, make sure that your API token is not in any commit. This repository has been configured to not check in the `cloud-flare.local.sh` file, which contains your API token.
+4. Before you push, make sure that your API token is not in any file that will get committed and pushed. This repository has been configured to not check in the `cloud-flare.local.sh` file, which contains your API token.
 5. Commit and push your changes to GitHub. Then check on GitHub that `cloud-flare.local.sh` did not get pushed.
 6. Email the repository link to navin@genwise.in.
 
