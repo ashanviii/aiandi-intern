@@ -1,5 +1,23 @@
 # Intern task: checking an AI comment moderator
 
+## Implementation in this copy
+
+The Python classifier and its generated report are available:
+
+- Run `python classify_comments.py` with Python 3.10+ to classify or resume.
+- Run `python classify_comments.py --render-only` to regenerate HTML from saved results without API calls.
+- Open [report.html](report.html) locally to search and filter all 100 predictions.
+- See [NOTES.md](NOTES.md) for credentials, model selection, and tool disclosure.
+- Run `python -m unittest -v` for the regression tests.
+
+The live Clef run is complete. [MISTAKES.md](MISTAKES.md) contains an explicitly
+AI-authored review, with expanded reasoning in [AI_REVIEW_DRAFT.md](AI_REVIEW_DRAFT.md).
+The reflection in [NOTES.md](NOTES.md) is also an AI-written draft. These documents
+disclose the assistance used; they do not establish completion of the original
+task's independent personal-review requirement.
+
+The original task instructions follow.
+
 This README is short on purpose. Use AI to research/understand anything not explained
 here: GenWise, Navin Kabra's background, Cloudflare Workers AI, Clef, and so on. That is
 part of the task. The task looks like a programming-heavy task, but it doesn't require you to be a programmer: you can use AI to get the program written (and checked into GitHub). I know enough non-programmers who are able to do that now.
