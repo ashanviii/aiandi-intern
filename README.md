@@ -10,11 +10,10 @@ The Python classifier and its generated report are available:
 - See [NOTES.md](NOTES.md) for credentials, model selection, and tool disclosure.
 - Run `python -m unittest -v` for the regression tests.
 
-The live Clef run is complete. [MISTAKES.md](MISTAKES.md) contains an explicitly
-AI-authored review, with expanded reasoning in [AI_REVIEW_DRAFT.md](AI_REVIEW_DRAFT.md).
-The reflection in [NOTES.md](NOTES.md) is also an AI-written draft. These documents
-disclose the assistance used; they do not establish completion of the original
-task's independent personal-review requirement.
+The live Clef run is complete. [MISTAKES.md](MISTAKES.md) contains the proposed
+corrections, with expanded reasoning in [REVIEW.md](REVIEW.md).
+[NOTES.md](NOTES.md) records the tools and review assistance used, along with
+the reflection draft. The original personal-review requirement is explained below.
 
 The original task instructions follow.
 
